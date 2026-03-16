@@ -1,5 +1,8 @@
 # Chirpy Starter
 
+todo #1: Fix deprecation error node js 20 => node js 24
+
+
 [![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy)][gem]&nbsp;
 [![GitHub license](https://img.shields.io/github/license/cotes2020/chirpy-starter.svg?color=blue)][mit]
 
