@@ -19,8 +19,6 @@ image: /assets/images/ExampleSwappyPic.png
 
 <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 
-
-=======
 <!---- Sourced From https://developers.cloudflare.com/turnstile/get-started/client-side-rendering/ https://developers.cloudflare.com/turnstile/get-started/server-side-validation/ ---->
 <!--- Add Basic placement div until user verifies, crappy solution for no routing logic --->
 <div id="gate" style="
@@ -57,8 +55,7 @@ const s = document.createElement("script");
 s.src = "https://challenges.cloudflare.com/turnstile/v0/api.js";
 s.defer = true; //execute after dom parses
 document.head.appendChild(s);
-  }
-}  
+
 # Alexander Carters First Post?!
 
 This will be my intro text. I can say whatever here hello gello jamie jmaie words words!
