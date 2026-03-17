@@ -50,7 +50,6 @@ async function onVerified(token) {
     document.getElementsByClassName("cf-turnstile")[0].style.display = "none";
     document.getElementById("gate").remove();
   } else {
-    console.log("Verification failed");
     document.getElementById("gate").remove();
   }
 }
@@ -60,8 +59,6 @@ s.defer = true; //execute after dom parses
 document.head.appendChild(s);
   }
 }  
-</script>
->>>>>>> 4f37f52 (Test again)
 # Alexander Carters First Post?!
 
 This will be my intro text. I can say whatever here hello gello jamie jmaie words words!
