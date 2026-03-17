@@ -43,7 +43,7 @@ async function onVerified(token) {
     body: JSON.stringify({ "cf-turnstile-response": token }),
   });
   const data = await responseOb.json();
-  if (data.ok) {
+  if (data) {
     console.log("Worker Data Resp: ", data);
     document.getElementsByClassName("cf-turnstile")[0].style.display = "none";
     document.getElementById("gate").remove();
