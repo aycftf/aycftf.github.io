@@ -8,6 +8,17 @@ tags: [servers, networking, os]
 image: /assets/images/ExampleSwappyPic.png
 ---
 
+<div id="gate" style="text-align:center; padding:3rem;">
+  <p>Verify you're human to continue reading blog post.</p>
+  <div class="cf-turnstile"
+       data-sitekey="0x4AAAAAACsN4kOnRM01XA2b"
+       data-callback="onVerified">
+  </div>
+  <p id="gate-msg"></p>
+</div>
+
+<div id="post-content" style="display:none">
+
 # Alexander Carters First Post?!
 
 This will be my intro text. I can say whatever here hello gello jamie jmaie words words!
@@ -76,7 +87,14 @@ Center and caption (HTML inside Markdown):
 - assets/
     - images/
         - png 3
-        - png 2 
+        - png 2
+ </div>
+ 
+<script
+  src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+  async
+  defer
+></script>
         - png 1
 
 
