@@ -7,6 +7,7 @@ categories: [homelab, hardware]
 tags: [servers, networking, os]
 image: /assets/images/ExampleSwappyPic.png
 ---
+<!---- Sourced From https://developers.cloudflare.com/turnstile/get-started/client-side-rendering/ https://developers.cloudflare.com/turnstile/get-started/server-side-validation/ ---->
 <!--- Add Basic placement div until user verifies, crappy solution for no routing logic --->
 {% raw %}
 <div id="gate" style="
@@ -23,7 +24,7 @@ image: /assets/images/ExampleSwappyPic.png
   <div class="cf-turnstile" data-sitekey="0x4AAAAAACsN4kOnRM01XA2b" data-callback="onVerified"></div>
 </div>
   
-<!---- Sourced From https://developers.cloudflare.com/turnstile/get-started/client-side-rendering/ https://developers.cloudflare.com/turnstile/get-started/server-side-validation/ ---->
+
 <script
   src="https://challenges.cloudflare.com/turnstile/v0/api.js"
   async
