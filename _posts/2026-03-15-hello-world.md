@@ -22,7 +22,7 @@ image: /assets/images/ExampleSwappyPic.png
 <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 
 
-<script>
+
 async function onVerified(token) {
   const responseOb = await fetch("https://acsite-worker.aycarter2005.workers.dev/", {
     method: "POST",
@@ -39,9 +39,9 @@ async function onVerified(token) {
     document.getElementById("gate").remove();
   }
 }
-</script>
-
-
+const s = document.createElement("script");
+s.src = "https://challenges.cloudflare.com/turnstile/v0/api.js";
+document.head.appendChild(s);
 # Alexander Carters First Post?!
 
 This will be my intro text. I can say whatever here hello gello jamie jmaie words words!
