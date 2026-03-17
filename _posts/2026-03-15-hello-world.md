@@ -9,7 +9,6 @@ image: /assets/images/ExampleSwappyPic.png
 ---
 <!---- Sourced From https://developers.cloudflare.com/turnstile/get-started/client-side-rendering/ https://developers.cloudflare.com/turnstile/get-started/server-side-validation/ ---->
 <!--- Add Basic placement div until user verifies, crappy solution for no routing logic --->
-{% raw %}
 <div id="gate" style="
   position: fixed;
   top: 0; left: 0;
@@ -43,12 +42,13 @@ async function onVerified(token) {
     document.getElementById("gate").style.visibility = "hidden";
     document.getElementsByClassName("cf-turnstile")[0].style.display = "none"; //most likely not needed
   } else {
-      window.location.href = "https://aycftf.github.io"; //ret to homepage
+      console.log(data);
+      console.log("FALIURE POINT");
+      document.getElementById("gate").style.visibility = "hidden";
+      //window.location.href = "https://aycftf.github.io"; //ret to homepage
   }
 }  
 </script>
-{% endraw %}
-
 # Alexander Carters First Post?!
 
 This will be my intro text. I can say whatever here hello gello jamie jmaie words words!
