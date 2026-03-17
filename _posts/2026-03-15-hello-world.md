@@ -35,31 +35,7 @@ image: /assets/images/ExampleSwappyPic.png
   <div class="cf-turnstile" data-sitekey="0x4AAAAAACsN4kOnRM01XA2b" data-callback="onVerified"></div>
 </div>
 
-<script>
-(function() {
-  const s = document.createElement("script");
-  s.src = "https://challenges.cloudflare.com/turnstile/v0/api.js";
-  s.defer = true;
-  document.head.appendChild(s);
 
-
-  
-  window.onVerified = async function onVerified(token) {
-    const responseOb = await fetch("https://acsite-worker.aycarter2005.workers.dev/", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ "cf-turnstile-response": token }),
-    });
-    const data = await responseOb.json();
-    if (data) {
-      console.log("Worker Data Resp: ", data);
-      document.getElementsByClassName("cf-turnstile")[0].style.display = "none";
-      document.getElementById("gate").remove();
-    } else {
-      document.getElementById("gate").remove();
-    }
-  }   
-})();
 
 
 # Alexander Carters First Post?!
