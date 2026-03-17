@@ -37,6 +37,7 @@ async function onVerified(token) {
   });
   const data = await responseOb.json()
   if (data.ok) {
+    console.log("Worker Data Resp: ", data)
     document.getElementById("gate").style.visibility = "hidden";
     document.getElementsByClassName("cf-turnstile")[0].style.display = "none"; //most likely not needed
   } else {
