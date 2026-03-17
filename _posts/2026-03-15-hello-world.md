@@ -19,7 +19,6 @@ image: /assets/images/ExampleSwappyPic.png
   align-items: center;
   justify-content: center;
 ">
-  <p>Verify you are not a bot....</p>
   <div class="cf-turnstile" data-sitekey="0x4AAAAAACsN4kOnRM01XA2b" data-callback="onVerified"></div>
 </div>
   
