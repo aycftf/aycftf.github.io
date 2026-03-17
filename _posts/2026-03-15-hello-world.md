@@ -33,14 +33,14 @@ async function onVerified(token) {
   const responseOb = await fetch("https://acsite-worker.aycarter2005.workers.dev/", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ "cf-turnstile-response": token }),
+    body: JSON.stringify({ "cf-turnstile-response": token }), //check token 
   });
   const data = await responseOb.json()
-  if (data.success) {
-    document.getElementById("gate").style.display = "none";
-    document.getElementByClassName("cf-turnstile").style.display = "none";
+  if (data.ok) {
+    document.getElementById("gate").style.visibility = "hidden";
+    document.getElementByClassName("cf-turnstile")[0].style.display = "none"; //most likely not needed
   } else {
-    turnstile.reset()
+      window.location.href = "https://aycftf.github.io"; //ret to homepage
   }
 }  
 </script>
