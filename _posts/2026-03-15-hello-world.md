@@ -7,16 +7,43 @@ categories: [homelab, hardware]
 tags: [servers, networking, os]
 image: /assets/images/ExampleSwappyPic.png
 ---
-<div id="turnstile-container">
-  <div class="cf-turnstile" data-sitekey="0x4AAAAAACsN4kOnRM01XA2b"></div>
+<!--- Add Basic placement div until user verifies, crappy solution for no routing logic --->
+<div id="gate" style="
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%
+  background: black;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+">
+  <p>Verify you are not a bot....</p>
+  <div class="cf-turnstile" data-sitekey="0x4AAAAAACsN4kOnRM01XA2b" data-callback="onVerified"></div>
 </div>
-
-
+  
+<!---- Sourced From https://developers.cloudflare.com/turnstile/get-started/client-side-rendering/ https://developers.cloudflare.com/turnstile/get-started/server-side-validation/ ---->
 <script
   src="https://challenges.cloudflare.com/turnstile/v0/api.js"
   async
   defer
 ></script>
+<script>
+async function onVerified(token) {
+  const responseOb = await fetch("https://acsite-worker.aycarter2005.workers.dev/", {
+    method: "POST",
+    headers: { "Content-Type": "application/json", "Referrer Policy": "strict-origin-when-cross-origin" },
+    body: JSON.stringify({ "cf-turnstile-response": token }),
+  });
+  const data = await responseOb.json()
+  if (data.success) {
+    document.getElementById("gate").style.display = "none";
+  } else {
+    turnstile.reset()
+  }
+}  
+</script>
 
 # Alexander Carters First Post?!
 
