@@ -39,6 +39,7 @@ async function onVerified(token) {
   const data = await responseOb.json()
   if (data.success) {
     document.getElementById("gate").style.display = "none";
+    document.getElementByClassName("cf-turnstile").style.display = "none";
   } else {
     turnstile.reset()
   }
