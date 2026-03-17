@@ -11,7 +11,7 @@ image: /assets/images/ExampleSwappyPic.png
 <div id="gate" style="
   position: fixed;
   top: 0; left: 0;
-  width: 100%; height: 100%
+  width: 100%; height: 100%;
   background: black;
   z-index: 9999;
   display: flex;
@@ -38,7 +38,7 @@ async function onVerified(token) {
   const data = await responseOb.json()
   if (data.ok) {
     document.getElementById("gate").style.visibility = "hidden";
-    document.getElementByClassName("cf-turnstile")[0].style.display = "none"; //most likely not needed
+    document.getElementsByClassName("cf-turnstile")[0].style.display = "none"; //most likely not needed
   } else {
       window.location.href = "https://aycftf.github.io"; //ret to homepage
   }
