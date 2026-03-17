@@ -7,12 +7,16 @@ categories: [homelab, hardware]
 tags: [servers, networking, os]
 image: /assets/images/ExampleSwappyPic.png
 ---
+<div id="turnstile-container">
+  <div class="cf-turnstile" data-sitekey="0x4AAAAAACsN4kOnRM01XA2b"></div>
+</div>
+
 
 <script
-  src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit"
+  src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+  async
   defer
 ></script>
-
 
 # Alexander Carters First Post?!
 
