@@ -41,6 +41,7 @@ async function onVerified(token) {
 }
 const s = document.createElement("script");
 s.src = "https://challenges.cloudflare.com/turnstile/v0/api.js";
+s.defer = true; //execute after dom parses
 document.head.appendChild(s);
 # Alexander Carters First Post?!
 
