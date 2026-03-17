@@ -7,19 +7,11 @@ categories: [homelab, hardware]
 tags: [servers, networking, os]
 image: /assets/images/ExampleSwappyPic.png
 ---
+<meta http-equiv="Content-Security-Policy" 
+      content="script-src 'self' 'unsafe-inline' https://challenges.cloudflare.com">
 
 <!-- Turnstile gate — sourced from Cloudflare docs -->
-<div id="gate" style="
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: black;
-  z-index: 9999;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-">
+<div id="gate" style=" position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: black; z-index: 9999; display: flex; flex-direction: column; align-items: center; justify-content: center; ">
   <div
     class="cf-turnstile"
     data-sitekey="0x4AAAAAACsN4kOnRM01XA2b"
@@ -29,7 +21,7 @@ image: /assets/images/ExampleSwappyPic.png
 
 <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 
-{% raw %}
+
 <script>
 async function onVerified(token) {
   const responseOb = await fetch("https://acsite-worker.aycarter2005.workers.dev/", {
@@ -40,15 +32,15 @@ async function onVerified(token) {
   const data = await responseOb.json();
   if (data.ok) {
     console.log("Worker Data Resp: ", data);
-    document.getElementById("gate").remove();;
     document.getElementsByClassName("cf-turnstile")[0].style.display = "none";
+    document.getElementById("gate").remove();
   } else {
     console.log("Verification failed");
     document.getElementById("gate").remove();
   }
 }
 </script>
-{% endraw %}
+
 
 # Alexander Carters First Post?!
 
