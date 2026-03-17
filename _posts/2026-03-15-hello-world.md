@@ -7,8 +7,6 @@ categories: [homelab, hardware]
 tags: [servers, networking, os]
 image: /assets/images/ExampleSwappyPic.png
 ---
-<meta http-equiv="Content-Security-Policy" 
-      content="script-src 'self' 'unsafe-inline' https://challenges.cloudflare.com">
 
 <!-- Turnstile gate — sourced from Cloudflare docs -->
 <div id="gate" style=" position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: black; z-index: 9999; display: flex; flex-direction: column; align-items: center; justify-content: center; ">
@@ -22,6 +20,23 @@ image: /assets/images/ExampleSwappyPic.png
 <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 
 
+=======
+<!---- Sourced From https://developers.cloudflare.com/turnstile/get-started/client-side-rendering/ https://developers.cloudflare.com/turnstile/get-started/server-side-validation/ ---->
+<!--- Add Basic placement div until user verifies, crappy solution for no routing logic --->
+<div id="gate" style="
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: black;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+">
+  <div class="cf-turnstile" data-sitekey="0x4AAAAAACsN4kOnRM01XA2b" data-callback="onVerified"></div>
+</div>
+  
 
 async function onVerified(token) {
   const responseOb = await fetch("https://acsite-worker.aycarter2005.workers.dev/", {
@@ -43,6 +58,10 @@ const s = document.createElement("script");
 s.src = "https://challenges.cloudflare.com/turnstile/v0/api.js";
 s.defer = true; //execute after dom parses
 document.head.appendChild(s);
+  }
+}  
+</script>
+>>>>>>> 4f37f52 (Test again)
 # Alexander Carters First Post?!
 
 This will be my intro text. I can say whatever here hello gello jamie jmaie words words!
