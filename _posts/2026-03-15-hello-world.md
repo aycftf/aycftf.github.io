@@ -8,6 +8,7 @@ tags: [servers, networking, os]
 image: /assets/images/ExampleSwappyPic.png
 ---
 <!--- Add Basic placement div until user verifies, crappy solution for no routing logic --->
+{% raw %}
 <div id="gate" style="
   position: fixed;
   top: 0; left: 0;
@@ -45,6 +46,7 @@ async function onVerified(token) {
   }
 }  
 </script>
+{% endraw %}
 
 # Alexander Carters First Post?!
 
