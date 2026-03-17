@@ -8,7 +8,10 @@ tags: [servers, networking, os]
 image: /assets/images/ExampleSwappyPic.png
 ---
 
-<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+<script
+  src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit"
+  defer
+></script>
 
 
 # Alexander Carters First Post?!
@@ -80,8 +83,6 @@ Center and caption (HTML inside Markdown):
     - images/
         - png 3
         - png 2
- </div>
-
         - png 1
 
 
