@@ -33,7 +33,7 @@ image: /assets/images/ExampleSwappyPic.png
 async function onVerified(token) {
   const responseOb = await fetch("https://acsite-worker.aycarter2005.workers.dev/", {
     method: "POST",
-    headers: { "Content-Type": "application/json", "Referrer Policy": "strict-origin-when-cross-origin" },
+    headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ "cf-turnstile-response": token }),
   });
   const data = await responseOb.json()
