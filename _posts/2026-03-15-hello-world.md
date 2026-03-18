@@ -14,6 +14,19 @@ image: /assets/images/ExampleSwappyPic.png
   defer
 ></script>
 <div class="cf-turnstile" data-sitekey="0x4AAAAAACsN4kOnRM01XA2b" data-callback="onVerified"></div>
+<script>
+function onVerified(token) {
+  fetch("https://acsite-worker.aycarter2005.workers.dev/", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ "cf-turnstile-response": token })
+  })
+  .then(res => res.json())
+  .then(data => {
+    if (data.ok) document.getElementById("gate").remove();
+  });
+}
+</script>
 
 # Alexander Carters First Post?!
 
