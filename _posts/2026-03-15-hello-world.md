@@ -8,13 +8,8 @@ tags: [servers, networking, os]
 image: /assets/images/ExampleSwappyPic.png
 ---
 
-<!-- Turnstile gate — sourced from Cloudflare docs -->
-<div id="gate" style=" position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: black; z-index: 9999; display: flex; flex-direction: column; align-items: center; justify-content: center; ">
-  <div
-    class="cf-turnstile"
-    data-sitekey="0x4AAAAAACsN4kOnRM01XA2b"
-    data-callback="onVerified">
-  </div>
+
+<div class="cf-turnstile" data-sitekey="0x4AAAAAACsN4kOnRM01XA2b" data-callback="onVerified">
 </div>
 <script>
 function onVerified(token) {
@@ -24,11 +19,15 @@ function onVerified(token) {
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ token })
   }).then(res => {
-    if (res.ok) document.getElementById("gate").remove();
+    if (res.ok) window.location.href = "https://aycftf.github.io/2026-03-15-hello-world.md;
+  });
+}
+
+  if (data.ok) window.location.href = "https://aycftf.github.io/your-post";
   });
 }
 //remove again just incase
-document.getElementById("gate").remove();
+//document.getElementById("gate").remove();
 </script>
 
 # Alexander Carters First Post?!
