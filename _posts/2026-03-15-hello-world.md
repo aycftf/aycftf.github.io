@@ -16,8 +16,17 @@ image: /assets/images/ExampleSwappyPic.png
     data-callback="onVerified">
   </div>
 </div>
-
-element.classList.remove("cf-turnstile"); 
+function onVerified(token) {
+  //fetch backend with token from data-sitekey, then get response, and remove gateway object, hopefully!
+  fetch("https://acsite-worker.aycarter2005.workers.dev/", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ token })
+  }).then(res => {
+    if (res.ok) document.getElementById("gate").remove();
+  });
+}
+//remove again just incase
 document.getElementById("gate").remove();
 
 
