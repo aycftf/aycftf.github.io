@@ -8,22 +8,11 @@ tags: [servers, networking, os]
 image: /assets/images/ExampleSwappyPic.png
 ---
 
-<div class="cf-turnstile" data-sitekey="0x4AAAAAACsN4kOnRM01XA2b" data-callback="onVerified">
-</div>
 <script
-function onVerified(token) {
-  //fetch backend with token from data-sitekey, then get response, and remove gateway object, hopefully!
-  fetch("https://acsite-worker.aycarter2005.workers.dev/", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ token })
-  }).then(res => {
-    if (res.ok) window.location.href = "https://aycftf.github.io/2026-03-15-hello-world.md;
-  });
-}
+  src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+  async
+  defer
 ></script>
-//remove again just incase
-//document.getElementById("gate").remove();
 
 
 # Alexander Carters First Post?!
