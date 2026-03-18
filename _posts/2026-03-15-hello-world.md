@@ -16,6 +16,7 @@ image: /assets/images/ExampleSwappyPic.png
     data-callback="onVerified">
   </div>
 </div>
+<script>
 function onVerified(token) {
   //fetch backend with token from data-sitekey, then get response, and remove gateway object, hopefully!
   fetch("https://acsite-worker.aycarter2005.workers.dev/", {
@@ -28,7 +29,7 @@ function onVerified(token) {
 }
 //remove again just incase
 document.getElementById("gate").remove();
-
+</script>
 
 # Alexander Carters First Post?!
 
