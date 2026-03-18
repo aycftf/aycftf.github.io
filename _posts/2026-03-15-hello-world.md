@@ -8,10 +8,9 @@ tags: [servers, networking, os]
 image: /assets/images/ExampleSwappyPic.png
 ---
 
-
 <div class="cf-turnstile" data-sitekey="0x4AAAAAACsN4kOnRM01XA2b" data-callback="onVerified">
 </div>
-<script>
+<script
 function onVerified(token) {
   //fetch backend with token from data-sitekey, then get response, and remove gateway object, hopefully!
   fetch("https://acsite-worker.aycarter2005.workers.dev/", {
@@ -22,13 +21,10 @@ function onVerified(token) {
     if (res.ok) window.location.href = "https://aycftf.github.io/2026-03-15-hello-world.md;
   });
 }
-
-  if (data.ok) window.location.href = "https://aycftf.github.io/your-post";
-  });
-}
+></script>
 //remove again just incase
 //document.getElementById("gate").remove();
-</script>
+
 
 # Alexander Carters First Post?!
 
