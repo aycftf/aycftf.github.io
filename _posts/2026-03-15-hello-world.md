@@ -17,6 +17,7 @@ image: /assets/images/ExampleSwappyPic.png
   </div>
 </div>
 
+element.classList.remove("cf-turnstile"); 
 document.getElementById("gate").remove();
 
 
