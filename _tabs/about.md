@@ -24,11 +24,15 @@ Specialties:
 
 _I currently have my A+; I am currently aiming for my CPTS and CCNA certifications._
 
-<span style="background: linear-gradient(90deg, #B7C240, #57C785); -webkit-background-clip: text; color: transparent; font-size: 60%"> Credly Badge: </span>
+<span style="background: linear-gradient(90deg, #B7C240, #57C785); -webkit-background-clip: text; color: transparent; font-size: 85%"> Credly Badge: </span>
 
 <div data-iframe-width="150" data-iframe-height="250" data-share-badge-id="a027feb7-fed4-4ac3-b749-1ef627ec0a70" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="https://cdn.credly.com/assets/utilities/embed.js"></script>
 
-Two personal fun facts about me are that I personally love a good hike with my black lab, Whiskey! Moreover, I mostly enjoy spending time with friends and family, exploring, and traveling!
+
+-----------------------------------------------------------------------------------------------------------------
+## Two personal fun facts about me: 
+* I personally love a good hike with my black lab, Whiskey!
+* Moreover, I mostly enjoy spending time with friends and family, exploring, and traveling!
 
 ![img-description](/assets/images/friends.jpeg)
 <br><em>Me and my friends, in Holland Michigan!</em>
