@@ -9,19 +9,16 @@
 ';
 
 /* append your custom style below */
-.card-wrapper:nth-child(1) .card-title {
+.card-wrapper:nth-child(1) {
   background-image: linear-gradient(80deg, #090979, #00D4FF) !important;
 }
-.card-body {
-  color: #FFFFFF !important;
-  font-weight: 700 !important;
-}
+.card-body p,
 .card-title {
   color: #FFFFFF !important;
   font-weight: 700 !important;
 }
 
-.card-wrapper:nth-child(2) .card-title {
+.card-wrapper:nth-child(2){
   background-image: linear-gradient(80deg, #090979, #00D4FF) !important;
 }
 .card-wrapper:nth-child(3) .card-title {
