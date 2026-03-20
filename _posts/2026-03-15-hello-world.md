@@ -30,7 +30,9 @@ function onVerified(token) {
 
 # Alexander Carters First Post?!
 
-This will be my intro text. I can say whatever here hello gello jamie jmaie words words!
+This will be my intro text. I can say whatever here! In the future, this site will be ___jam-packed___ with scripts, utilities, and write-ups on a number of topics within the tech industry...
+
+<span style="color: blue;">Lets Demo some things!</span>
 
 ## Quick demo
 
@@ -78,7 +80,7 @@ Basic markdown sample:
 Center and caption (HTML inside Markdown):
 
 <p align="center">
-  <img src="/assets/images/centered.png" alt="Centered image" width="600">
+  <img src="/assets/images/centered.png" alt="Centered image" width="400">
   <br><em>Example: Centered Image!</em>
 </p>
 
