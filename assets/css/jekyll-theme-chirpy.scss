@@ -10,16 +10,19 @@
 
 /* append your custom style below */
 .card-wrapper:nth-child(1) .card-title {
-  background-image: linear-gradient(135deg, #134e4a, #86efac) !important;
+  background-image: linear-gradient(80deg, #090979, #00D4FF) !important;
 }
-.card-body p,
+.card-body {
+  color: #FFFFFF !important;
+  font-weight: 700 !important;
+}
 .card-title {
   color: #FFFFFF !important;
   font-weight: 700 !important;
 }
 
 .card-wrapper:nth-child(2) .card-title {
-  background-image: linear-gradient(135deg, #166534, #4ade80) !important;
+  background-image: linear-gradient(80deg, #090979, #00D4FF) !important;
 }
 .card-wrapper:nth-child(3) .card-title {
   background-image: linear-gradient(135deg, #14532d, #6ee7b7) !important;
